@@ -1508,6 +1508,9 @@
     clearCountdownTimer();
     state.timers.countdown = setInterval(() => {
       if (state.phase !== "playing") return;
+      // Live mode: chưa nối live thì ĐỨNG ở câu hiện tại, chờ live (Cơ 27/11)
+      // — không đếm ngược, không chạy bot demo. Nối live xong tự đếm tiếp.
+      if (state.mode === "live" && !state.tiktokConnected) return;
       state.timeLeft -= 1;
       renderTimer();
       if (state.timeLeft <= 0) {
@@ -1972,6 +1975,7 @@
   function onAblyStatus(msg) {
     const data = parseAblyData(msg.data);
     if (!data) return;
+    const wasConnected = Boolean(state.tiktokConnected);
     state.wsConnected = Boolean(data.connected);
     state.tiktokConnected = Boolean(data.connected);
     state.tiktokUsername = data.username || "";
@@ -1987,6 +1991,10 @@
       }
     } else {
       setWsStatus(data.message ? `Ably: ${data.message}` : "Ably: Chưa có live");
+    }
+    // Vừa nối live: đọc lại câu hiện tại cho người xem mới vào (Cơ 27/11).
+    if (!wasConnected && state.wsConnected && state.mode === "live" && state.phase === "playing") {
+      reread();
     }
     updateControlButtons();
   }
@@ -2203,7 +2211,17 @@
       setSecondsPerQuestion(params.get("sec"));
     }
 
-    if (params.get("mode") === "live") {
+    // Mặc định LIVE (Cơ 27/11): mở link OBS (?obs=1 hoặc ?live=<username>)
+    // là vào thẳng chế độ live, nhận bình luận thật. Demo chỉ khi mở
+    // tường minh ?mode=demo. (Trước đây chỉ ?mode=live mới chuyển live
+    // nên link OBS vẫn chạy bot demo.)
+    if (params.get("mode") === "demo") {
+      state.mode = "demo";
+    } else if (
+      params.get("mode") === "live" ||
+      params.get("obs") === "1" ||
+      params.has("live")
+    ) {
       state.mode = "live";
     }
 
