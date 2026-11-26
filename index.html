@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đoán Từ Tiếng Trung — HSK 1-2 | TikTok Live</title>
+  <meta name="description" content="Trò chơi Đoán Từ Tiếng Trung HSK 1-2 tương tác trực tiếp trên TikTok Live." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c8102e'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-size='36' font-weight='bold' font-family='sans-serif'%3E%E4%B8%AD%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css?v=1" />
+  <script>
+    (function () {
+      try {
+        var href = String(window.location.href || "");
+        var search = String(window.location.search || "");
+        var hash = String(window.location.hash || "");
+        var cleanRe = /(?:^|[?&#])clean=(?:1|true)(?:$|[&/?#])/i;
+        var isClean = cleanRe.test(search) || cleanRe.test(hash) || cleanRe.test(href);
+        if (!isClean && window.parent && window.parent !== window) {
+          try {
+            var parentHref = String(window.parent.location.href || "");
+            if (cleanRe.test(parentHref)) isClean = true;
+          } catch (_) {}
+        }
+        if (isClean) {
+          document.documentElement.classList.add("clean-mode");
+          document.documentElement.dataset.clean = "1";
+        }
+      } catch (_) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="app-shell" id="appShell">
+    <canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+
+    <div id="winnerToast" class="winner-toast" role="status" aria-live="polite" hidden>
+      <span class="toast-icon">🎉</span>
+      <span class="toast-text" id="winnerToastText"></span>
+    </div>
+
+    <header class="top-banner" id="topBanner">
+      <div class="banner-inner">
+        <span class="mode-badge" id="modeBadge">DEMO</span>
+        <span class="banner-text">Bình luận đáp án để đua top</span>
+        <span class="progress-badge" id="questionProgress">Câu 1 / 60</span>
+      </div>
+    </header>
+
+    <main class="stage" id="mainStage">
+      <section class="header-bar">
+        <div class="brand-block">
+          <div class="brand-meta">
+            <span class="level-tag">HSK 1–2</span>
+            <span class="direction-pill" id="directionPill">Việt → Trung</span>
+            <span class="paused-pill" id="pausedPill" hidden>⏸ Đang tạm dừng</span>
+          </div>
+          <h1 class="game-title">ĐOÁN TỪ TIẾNG TRUNG</h1>
+        </div>
+
+        <div class="timer-card" id="timerCard" aria-label="Thời gian còn lại">
+          <div class="timer-label">THỜI GIAN</div>
+          <div class="timer-value" id="timerValue">45s</div>
+          <div class="timer-track">
+            <div class="timer-fill" id="timerBarFill"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="question-card" id="questionCard">
+        <div class="question-prompt" id="questionPrompt">
+          <div class="prompt-main" id="promptMain">nước</div>
+          <div class="prompt-pinyin" id="promptPinyin" hidden></div>
+          <div class="prompt-sub" id="promptSub">trong tiếng Trung là gì?</div>
+        </div>
+
+        <div class="letter-boxes" id="letterBoxes" aria-label="Ô chữ đáp án"></div>
+
+        <div class="hint-line" id="hintLine">
+          <span class="hint-label">Gợi ý:</span>
+          <span class="hint-content" id="hintContent"></span>
+        </div>
+
+        <div class="reveal-panel" id="revealPanel" hidden>
+          <div class="reveal-status" id="revealStatus">🎉 Đáp án chính xác!</div>
+          <div class="reveal-answer-row">
+            <span class="reveal-hanzi" id="revealHanzi">水</span>
+            <span class="reveal-pinyin" id="revealPinyin">(shuǐ)</span>
+            <span class="reveal-sep">—</span>
+            <span class="reveal-meaning" id="revealMeaning">nước</span>
+          </div>
+          <div class="reveal-example">
+            <div class="example-zh" id="revealExampleZh">我喝水。</div>
+            <div class="example-vi" id="revealExampleVi">Tôi uống nước.</div>
+          </div>
+          <div class="reveal-advance" id="revealAdvance">Chuyển câu tiếp theo ngay...</div>
+        </div>
+      </section>
+
+      <section class="leaderboard-card" id="leaderboardCard">
+        <div class="section-header">
+          <h2 class="section-title">🏆 TOP CAO THỦ</h2>
+          <span class="section-meta" id="playerCount">0 người chơi</span>
+        </div>
+
+        <div class="top-three" id="topThree">
+          <div class="podium-card podium-1" id="podium1">
+            <div class="podium-medal">🥇</div>
+            <div class="podium-name">Chưa có</div>
+            <div class="podium-score">0 điểm</div>
+          </div>
+          <div class="podium-card podium-2" id="podium2">
+            <div class="podium-medal">🥈</div>
+            <div class="podium-name">Chưa có</div>
+            <div class="podium-score">0 điểm</div>
+          </div>
+          <div class="podium-card podium-3" id="podium3">
+            <div class="podium-medal">🥉</div>
+            <div class="podium-name">Chưa có</div>
+            <div class="podium-score">0 điểm</div>
+          </div>
+        </div>
+
+        <ol class="leaderboard-list" id="leaderboardList"></ol>
+      </section>
+
+      <section class="comments-card" id="commentsCard">
+        <div class="section-header">
+          <h2 class="section-title">💬 BÌNH LUẬN TRỰC TIẾP</h2>
+          <span class="feed-status" id="feedStatus">Chế độ Demo</span>
+        </div>
+        <ul class="comment-feed" id="commentFeed" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <section class="end-screen" id="endScreen" hidden>
+      <div class="end-card">
+        <div class="end-badge">HOÀN THÀNH 60 CÂU HỎI</div>
+        <h2 class="end-title">Chơi tiếp lần sau nhé! Cảm ơn cả nhà đã tham gia</h2>
+        <div class="end-subtitle">Bảng xếp hạng chung cuộc — TOP CAO THỦ</div>
+
+        <div class="top-three end-podium" id="finalTopThree"></div>
+        <ol class="leaderboard-list end-list" id="finalLeaderboardList"></ol>
+
+        <button type="button" class="btn btn-primary btn-lg" id="btnPlayAgain">
+          🔄 Chơi lại từ đầu
+        </button>
+      </div>
+    </section>
+
+    <footer class="host-controls" id="hostControls">
+      <div class="controls-row">
+        <button type="button" class="btn btn-primary" id="btnStartPause">⏸ Tạm dừng</button>
+        <button type="button" class="btn btn-secondary" id="btnNext">⏭ Câu tiếp</button>
+        <button type="button" class="btn btn-outline" id="btnReset">🔄 Reset điểm</button>
+
+        <label class="control-field" for="inputSeconds">
+          <span>Giây/câu</span>
+          <input type="number" id="inputSeconds" min="5" max="120" value="45" />
+        </label>
+
+        <label class="control-check" for="toggleTts">
+          <input type="checkbox" id="toggleTts" checked />
+          <span>Đọc câu hỏi</span>
+        </label>
+
+        <button type="button" class="btn btn-outline" id="btnReread">🔁 Đọc lại</button>
+      </div>
+
+      <div class="controls-row controls-live-row">
+        <div class="mode-switch" role="group" aria-label="Chế độ chơi">
+          <button type="button" class="mode-btn active" id="btnModeDemo" data-mode="demo">Demo</button>
+          <button type="button" class="mode-btn" id="btnModeLive" data-mode="live">Live</button>
+        </div>
+
+        <div class="tiktok-connect">
+          <input
+            type="text"
+            id="inputUsername"
+            class="username-input"
+            placeholder="Nhập @username TikTok"
+            autocomplete="off"
+          />
+          <button type="button" class="btn btn-accent" id="btnConnect">Kết nối</button>
+        </div>
+
+        <span class="ws-status" id="wsStatus">Demo đang chạy • Space: dừng/chạy • S: đọc lại</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@ably/pubsub-device@3.2.0/dist/cdn/ably.min.js"></script>
+  <script src="ably-config.js"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>

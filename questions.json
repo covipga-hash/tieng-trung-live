@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "direction": "vi-zh",
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "meaning_vi": "nước",
+    "example_zh": "我喝水。",
+    "example_vi": "Tôi uống nước.",
+    "hint": { "type": "danh từ", "letters": 1, "firstLetter": "s" }
+  },
+  {
+    "id": 2,
+    "direction": "zh-vi",
+    "hanzi": "猫",
+    "pinyin": "māo",
+    "meaning_vi": "mèo",
+    "example_zh": "我有一只猫。",
+    "example_vi": "Tôi có một con mèo.",
+    "hint": { "type": "danh từ", "letters": 3, "firstLetter": "m" }
+  },
+  {
+    "id": 3,
+    "direction": "vi-zh",
+    "hanzi": "你好",
+    "pinyin": "nǐ hǎo",
+    "meaning_vi": "xin chào",
+    "example_zh": "你好，很高兴认识你！",
+    "example_vi": "Xin chào, rất vui được quen bạn!",
+    "hint": { "type": "cụm từ", "letters": 2, "firstLetter": "n" }
+  },
+  {
+    "id": 4,
+    "direction": "zh-vi",
+    "hanzi": "车",
+    "pinyin": "chē",
+    "meaning_vi": "xe, ô tô",
+    "example_zh": "这辆车很漂亮。",
+    "example_vi": "Chiếc xe này rất đẹp.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "x" }
+  },
+  {
+    "id": 5,
+    "direction": "vi-zh",
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "meaning_vi": "trà",
+    "example_zh": "我喜欢喝茶。",
+    "example_vi": "Tôi thích uống trà.",
+    "hint": { "type": "danh từ", "letters": 1, "firstLetter": "c" }
+  },
+  {
+    "id": 6,
+    "direction": "zh-vi",
+    "hanzi": "爸爸",
+    "pinyin": "bà ba",
+    "meaning_vi": "bố, ba",
+    "example_zh": "我爸爸是老师。",
+    "example_vi": "Bố tôi là giáo viên.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "b" }
+  },
+  {
+    "id": 7,
+    "direction": "vi-zh",
+    "hanzi": "妈妈",
+    "pinyin": "mā ma",
+    "meaning_vi": "mẹ",
+    "example_zh": "妈妈做的菜很好吃。",
+    "example_vi": "Món mẹ nấu rất ngon.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "m" }
+  },
+  {
+    "id": 8,
+    "direction": "zh-vi",
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "meaning_vi": "ăn",
+    "example_zh": "你吃早饭了吗？",
+    "example_vi": "Bạn ăn sáng chưa?",
+    "hint": { "type": "động từ", "letters": 2, "firstLetter": "ă" }
+  },
+  {
+    "id": 9,
+    "direction": "vi-zh",
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "meaning_vi": "uống",
+    "example_zh": "你想喝什么？",
+    "example_vi": "Bạn muốn uống gì?",
+    "hint": { "type": "động từ", "letters": 1, "firstLetter": "h" }
+  },
+  {
+    "id": 10,
+    "direction": "zh-vi",
+    "hanzi": "狗",
+    "pinyin": "gǒu",
+    "meaning_vi": "chó",
+    "example_zh": "那只小狗很可爱。",
+    "example_vi": "Con chó nhỏ đó rất đáng yêu.",
+    "hint": { "type": "danh từ", "letters": 3, "firstLetter": "c" }
+  },
+  {
+    "id": 11,
+    "direction": "vi-zh",
+    "hanzi": "一",
+    "pinyin": "yī",
+    "meaning_vi": "số một",
+    "example_zh": "我有一个苹果。",
+    "example_vi": "Tôi có một quả táo.",
+    "hint": { "type": "số từ", "letters": 1, "firstLetter": "y" }
+  },
+  {
+    "id": 12,
+    "direction": "zh-vi",
+    "hanzi": "三",
+    "pinyin": "sān",
+    "meaning_vi": "ba, số ba",
+    "example_zh": "我买三本书。",
+    "example_vi": "Tôi mua ba quyển sách.",
+    "hint": { "type": "số từ", "letters": 2, "firstLetter": "b" }
+  },
+  {
+    "id": 13,
+    "direction": "vi-zh",
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "meaning_vi": "số năm",
+    "example_zh": "现在五点了。",
+    "example_vi": "Bây giờ là năm giờ rồi.",
+    "hint": { "type": "số từ", "letters": 1, "firstLetter": "w" }
+  },
+  {
+    "id": 14,
+    "direction": "zh-vi",
+    "hanzi": "十",
+    "pinyin": "shí",
+    "meaning_vi": "mười, số mười",
+    "example_zh": "桌上有十个杯子。",
+    "example_vi": "Trên bàn có mười cái cốc.",
+    "hint": { "type": "số từ", "letters": 4, "firstLetter": "m" }
+  },
+  {
+    "id": 15,
+    "direction": "vi-zh",
+    "hanzi": "百",
+    "pinyin": "bǎi",
+    "meaning_vi": "một trăm",
+    "example_zh": "这件衣服一百块。",
+    "example_vi": "Cái áo này một trăm tệ.",
+    "hint": { "type": "số từ", "letters": 1, "firstLetter": "b" }
+  },
+  {
+    "id": 16,
+    "direction": "zh-vi",
+    "hanzi": "今天",
+    "pinyin": "jīn tiān",
+    "meaning_vi": "hôm nay",
+    "example_zh": "今天天气很好。",
+    "example_vi": "Thời tiết hôm nay rất đẹp.",
+    "hint": { "type": "danh từ", "letters": 6, "firstLetter": "h" }
+  },
+  {
+    "id": 17,
+    "direction": "vi-zh",
+    "hanzi": "明天",
+    "pinyin": "míng tiān",
+    "meaning_vi": "ngày mai",
+    "example_zh": "我明天去学校。",
+    "example_vi": "Ngày mai tôi đi học.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "m" }
+  },
+  {
+    "id": 18,
+    "direction": "zh-vi",
+    "hanzi": "昨天",
+    "pinyin": "zuó tiān",
+    "meaning_vi": "hôm qua",
+    "example_zh": "昨天我看了电影。",
+    "example_vi": "Hôm qua tôi đã xem phim.",
+    "hint": { "type": "danh từ", "letters": 6, "firstLetter": "h" }
+  },
+  {
+    "id": 19,
+    "direction": "vi-zh",
+    "hanzi": "现在",
+    "pinyin": "xiàn zài",
+    "meaning_vi": "bây giờ",
+    "example_zh": "现在几点了？",
+    "example_vi": "Bây giờ là mấy giờ rồi?",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "x" }
+  },
+  {
+    "id": 20,
+    "direction": "zh-vi",
+    "hanzi": "谢谢",
+    "pinyin": "xiè xie",
+    "meaning_vi": "cảm ơn",
+    "example_zh": "谢谢你的帮助！",
+    "example_vi": "Cảm ơn sự giúp đỡ của bạn!",
+    "hint": { "type": "cụm từ", "letters": 5, "firstLetter": "c" }
+  },
+  {
+    "id": 21,
+    "direction": "vi-zh",
+    "hanzi": "苹果",
+    "pinyin": "píng guǒ",
+    "meaning_vi": "quả táo",
+    "example_zh": "我每天吃一个苹果。",
+    "example_vi": "Mỗi ngày tôi ăn một quả táo.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "p" }
+  },
+  {
+    "id": 22,
+    "direction": "zh-vi",
+    "hanzi": "米饭",
+    "pinyin": "mǐ fàn",
+    "meaning_vi": "cơm",
+    "example_zh": "我想吃一碗米饭。",
+    "example_vi": "Tôi muốn ăn một bát cơm.",
+    "hint": { "type": "danh từ", "letters": 3, "firstLetter": "c" }
+  },
+  {
+    "id": 23,
+    "direction": "vi-zh",
+    "hanzi": "牛奶",
+    "pinyin": "niú nǎi",
+    "meaning_vi": "sữa",
+    "example_zh": "弟弟早上喝牛奶。",
+    "example_vi": "Em trai uống sữa vào buổi sáng.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "n" }
+  },
+  {
+    "id": 24,
+    "direction": "zh-vi",
+    "hanzi": "面条",
+    "pinyin": "miàn tiáo",
+    "meaning_vi": "mì, sợi mì",
+    "example_zh": "这碗面条很香。",
+    "example_vi": "Bát mì này rất thơm.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "m" }
+  },
+  {
+    "id": 25,
+    "direction": "vi-zh",
+    "hanzi": "旅游",
+    "pinyin": "lǚ yóu",
+    "meaning_vi": "du lịch",
+    "example_zh": "我喜欢去中国旅游。",
+    "example_vi": "Tôi thích đi du lịch Trung Quốc.",
+    "hint": { "type": "động từ", "letters": 2, "firstLetter": "l" }
+  },
+  {
+    "id": 26,
+    "direction": "zh-vi",
+    "hanzi": "书",
+    "pinyin": "shū",
+    "meaning_vi": "sách",
+    "example_zh": "我在看一本中文书。",
+    "example_vi": "Tôi đang đọc một quyển sách tiếng Trung.",
+    "hint": { "type": "danh từ", "letters": 4, "firstLetter": "s" }
+  },
+  {
+    "id": 27,
+    "direction": "vi-zh",
+    "hanzi": "哥哥",
+    "pinyin": "gē ge",
+    "meaning_vi": "anh trai",
+    "example_zh": "我哥哥在北京工作。",
+    "example_vi": "Anh trai tôi làm việc ở Bắc Kinh.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "g" }
+  },
+  {
+    "id": 28,
+    "direction": "zh-vi",
+    "hanzi": "姐姐",
+    "pinyin": "jiě jie",
+    "meaning_vi": "chị gái",
+    "example_zh": "姐姐送我一本书。",
+    "example_vi": "Chị gái tặng tôi một quyển sách.",
+    "hint": { "type": "danh từ", "letters": 6, "firstLetter": "c" }
+  },
+  {
+    "id": 29,
+    "direction": "vi-zh",
+    "hanzi": "弟弟",
+    "pinyin": "dì di",
+    "meaning_vi": "em trai",
+    "example_zh": "我弟弟今年八岁。",
+    "example_vi": "Em trai tôi năm nay tám tuổi.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "d" }
+  },
+  {
+    "id": 30,
+    "direction": "zh-vi",
+    "hanzi": "妹妹",
+    "pinyin": "mèi mei",
+    "meaning_vi": "em gái",
+    "example_zh": "我妹妹很喜欢画画。",
+    "example_vi": "Em gái tôi rất thích vẽ tranh.",
+    "hint": { "type": "danh từ", "letters": 5, "firstLetter": "e" }
+  },
+  {
+    "id": 31,
+    "direction": "vi-zh",
+    "hanzi": "绿",
+    "pinyin": "lǜ",
+    "meaning_vi": "xanh lá",
+    "example_zh": "春天树叶变绿了。",
+    "example_vi": "Mùa xuân lá cây chuyển xanh rồi.",
+    "hint": { "type": "tính từ", "letters": 1, "firstLetter": "l" }
+  },
+  {
+    "id": 32,
+    "direction": "zh-vi",
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "meaning_vi": "nhà, gia đình",
+    "example_zh": "我爱我的家。",
+    "example_vi": "Tôi yêu gia đình của tôi.",
+    "hint": { "type": "danh từ", "letters": 3, "firstLetter": "n" }
+  },
+  {
+    "id": 33,
+    "direction": "vi-zh",
+    "hanzi": "朋友",
+    "pinyin": "péng you",
+    "meaning_vi": "bạn bè",
+    "example_zh": "他是我的好朋友。",
+    "example_vi": "Anh ấy là bạn thân của tôi.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "p" }
+  },
+  {
+    "id": 34,
+    "direction": "zh-vi",
+    "hanzi": "老师",
+    "pinyin": "lǎo shī",
+    "meaning_vi": "giáo viên, thầy cô",
+    "example_zh": "王老师教我们汉语。",
+    "example_vi": "Thầy Vương dạy chúng tôi tiếng Hán.",
+    "hint": { "type": "danh từ", "letters": 8, "firstLetter": "g" }
+  },
+  {
+    "id": 35,
+    "direction": "vi-zh",
+    "hanzi": "学生",
+    "pinyin": "xué shēng",
+    "meaning_vi": "học sinh",
+    "example_zh": "我是一名大学生。",
+    "example_vi": "Tôi là một sinh viên đại học.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "x" }
+  },
+  {
+    "id": 36,
+    "direction": "zh-vi",
+    "hanzi": "医生",
+    "pinyin": "yī shēng",
+    "meaning_vi": "bác sĩ",
+    "example_zh": "医生让我多休息。",
+    "example_vi": "Bác sĩ bảo tôi nghỉ ngơi nhiều hơn.",
+    "hint": { "type": "danh từ", "letters": 5, "firstLetter": "b" }
+  },
+  {
+    "id": 37,
+    "direction": "vi-zh",
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "meaning_vi": "xem",
+    "example_zh": "我晚上喜欢看书。",
+    "example_vi": "Buổi tối tôi thích đọc sách.",
+    "hint": { "type": "động từ", "letters": 1, "firstLetter": "k" }
+  },
+  {
+    "id": 38,
+    "direction": "zh-vi",
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "meaning_vi": "nghe",
+    "example_zh": "我经常听中文歌。",
+    "example_vi": "Tôi thường nghe nhạc tiếng Trung.",
+    "hint": { "type": "động từ", "letters": 4, "firstLetter": "n" }
+  },
+  {
+    "id": 39,
+    "direction": "vi-zh",
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "meaning_vi": "nói",
+    "example_zh": "她会说一点儿汉语。",
+    "example_vi": "Cô ấy biết nói một chút tiếng Trung.",
+    "hint": { "type": "động từ", "letters": 1, "firstLetter": "s" }
+  },
+  {
+    "id": 40,
+    "direction": "zh-vi",
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "meaning_vi": "viết",
+    "example_zh": "请写下你的名字。",
+    "example_vi": "Hãy viết tên của bạn xuống.",
+    "hint": { "type": "động từ", "letters": 4, "firstLetter": "v" }
+  },
+  {
+    "id": 41,
+    "direction": "vi-zh",
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "meaning_vi": "mua",
+    "example_zh": "我想去超市买水果。",
+    "example_vi": "Tôi muốn đi siêu thị mua trái cây.",
+    "hint": { "type": "động từ", "letters": 1, "firstLetter": "m" }
+  },
+  {
+    "id": 42,
+    "direction": "zh-vi",
+    "hanzi": "去",
+    "pinyin": "qù",
+    "meaning_vi": "đi",
+    "example_zh": "周末你去哪儿？",
+    "example_vi": "Cuối tuần bạn đi đâu?",
+    "hint": { "type": "động từ", "letters": 2, "firstLetter": "đ" }
+  },
+  {
+    "id": 43,
+    "direction": "vi-zh",
+    "hanzi": "来",
+    "pinyin": "lái",
+    "meaning_vi": "đến",
+    "example_zh": "欢迎你来我家玩。",
+    "example_vi": "Chào mừng bạn đến nhà tôi chơi.",
+    "hint": { "type": "động từ", "letters": 1, "firstLetter": "l" }
+  },
+  {
+    "id": 44,
+    "direction": "zh-vi",
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "meaning_vi": "yêu",
+    "example_zh": "我很爱我的家人。",
+    "example_vi": "Tôi rất yêu gia đình mình.",
+    "hint": { "type": "động từ", "letters": 3, "firstLetter": "y" }
+  },
+  {
+    "id": 45,
+    "direction": "vi-zh",
+    "hanzi": "学习",
+    "pinyin": "xué xí",
+    "meaning_vi": "học tập",
+    "example_zh": "我每天学习汉语。",
+    "example_vi": "Mỗi ngày tôi đều học tiếng Trung.",
+    "hint": { "type": "động từ", "letters": 2, "firstLetter": "x" }
+  },
+  {
+    "id": 46,
+    "direction": "zh-vi",
+    "hanzi": "工作",
+    "pinyin": "gōng zuò",
+    "meaning_vi": "làm việc, công việc",
+    "example_zh": "你在哪里工作？",
+    "example_vi": "Bạn làm việc ở đâu?",
+    "hint": { "type": "động từ", "letters": 7, "firstLetter": "l" }
+  },
+  {
+    "id": 47,
+    "direction": "vi-zh",
+    "hanzi": "睡觉",
+    "pinyin": "shuì jiào",
+    "meaning_vi": "đi ngủ",
+    "example_zh": "我晚上十点睡觉。",
+    "example_vi": "Tôi đi ngủ lúc 10 giờ tối.",
+    "hint": { "type": "động từ", "letters": 2, "firstLetter": "s" }
+  },
+  {
+    "id": 48,
+    "direction": "zh-vi",
+    "hanzi": "星期",
+    "pinyin": "xīng qī",
+    "meaning_vi": "tuần, thứ",
+    "example_zh": "一个星期有七天。",
+    "example_vi": "Một tuần có bảy ngày.",
+    "hint": { "type": "danh từ", "letters": 4, "firstLetter": "t" }
+  },
+  {
+    "id": 49,
+    "direction": "vi-zh",
+    "hanzi": "上午",
+    "pinyin": "shàng wǔ",
+    "meaning_vi": "buổi sáng",
+    "example_zh": "我上午有汉语课。",
+    "example_vi": "Buổi sáng tôi có tiết tiếng Trung.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "s" }
+  },
+  {
+    "id": 50,
+    "direction": "zh-vi",
+    "hanzi": "晚上",
+    "pinyin": "wǎn shang",
+    "meaning_vi": "buổi tối",
+    "example_zh": "晚上我们一起吃饭吧。",
+    "example_vi": "Buổi tối chúng ta cùng ăn cơm nhé.",
+    "hint": { "type": "danh từ", "letters": 7, "firstLetter": "b" }
+  },
+  {
+    "id": 51,
+    "direction": "vi-zh",
+    "hanzi": "年",
+    "pinyin": "nián",
+    "meaning_vi": "năm",
+    "example_zh": "祝你新年快乐！",
+    "example_vi": "Chúc bạn năm mới vui vẻ!",
+    "hint": { "type": "danh từ", "letters": 1, "firstLetter": "n" }
+  },
+  {
+    "id": 52,
+    "direction": "zh-vi",
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "meaning_vi": "tháng",
+    "example_zh": "一年有十二个月。",
+    "example_vi": "Một năm có mười hai tháng.",
+    "hint": { "type": "danh từ", "letters": 5, "firstLetter": "t" }
+  },
+  {
+    "id": 53,
+    "direction": "vi-zh",
+    "hanzi": "水果",
+    "pinyin": "shuǐ guǒ",
+    "meaning_vi": "trái cây",
+    "example_zh": "妈妈买了很多水果。",
+    "example_vi": "Mẹ mua rất nhiều trái cây.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "s" }
+  },
+  {
+    "id": 54,
+    "direction": "zh-vi",
+    "hanzi": "鸡蛋",
+    "pinyin": "jī dàn",
+    "meaning_vi": "trứng, trứng gà",
+    "example_zh": "早上我吃一个鸡蛋。",
+    "example_vi": "Buổi sáng tôi ăn một quả trứng gà.",
+    "hint": { "type": "danh từ", "letters": 5, "firstLetter": "t" }
+  },
+  {
+    "id": 55,
+    "direction": "vi-zh",
+    "hanzi": "咖啡",
+    "pinyin": "kā fēi",
+    "meaning_vi": "cà phê",
+    "example_zh": "爸爸每天喝一杯咖啡。",
+    "example_vi": "Bố mỗi ngày uống một ly cà phê.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "k" }
+  },
+  {
+    "id": 56,
+    "direction": "zh-vi",
+    "hanzi": "电话",
+    "pinyin": "diàn huà",
+    "meaning_vi": "điện thoại",
+    "example_zh": "我给你打电话。",
+    "example_vi": "Tôi gọi điện thoại cho bạn.",
+    "hint": { "type": "danh từ", "letters": 9, "firstLetter": "đ" }
+  },
+  {
+    "id": 57,
+    "direction": "vi-zh",
+    "hanzi": "学校",
+    "pinyin": "xué xiào",
+    "meaning_vi": "trường học",
+    "example_zh": "我们学校很大。",
+    "example_vi": "Trường học của chúng tôi rất lớn.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "x" }
+  },
+  {
+    "id": 58,
+    "direction": "zh-vi",
+    "hanzi": "医院",
+    "pinyin": "yī yuàn",
+    "meaning_vi": "bệnh viện",
+    "example_zh": "医院离我家很近。",
+    "example_vi": "Bệnh viện rất gần nhà tôi.",
+    "hint": { "type": "danh từ", "letters": 8, "firstLetter": "b" }
+  },
+  {
+    "id": 59,
+    "direction": "vi-zh",
+    "hanzi": "天气",
+    "pinyin": "tiān qì",
+    "meaning_vi": "thời tiết",
+    "example_zh": "今天的天气很凉快。",
+    "example_vi": "Thời tiết hôm nay rất mát mẻ.",
+    "hint": { "type": "danh từ", "letters": 2, "firstLetter": "t" }
+  },
+  {
+    "id": 60,
+    "direction": "zh-vi",
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "meaning_vi": "tiền",
+    "example_zh": "这本书多少钱？",
+    "example_vi": "Quyển sách này bao nhiêu tiền?",
+    "hint": { "type": "danh từ", "letters": 4, "firstLetter": "t" }
+  }
+]
