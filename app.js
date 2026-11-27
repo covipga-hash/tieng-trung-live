@@ -1882,7 +1882,7 @@
     // Tài khoản MAU bắt buộc clientId trên device (không có thì 401).
     const realtime = AblyPubSub.createClient({
       key: cfg.key,
-      clientId: "obs-" + Math.random().toString(36).slice(2, 8)
+      clientId: "obs-tieng-trung"
     });
     state.ably = realtime;
 
